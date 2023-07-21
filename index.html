@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booklyn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets\css\style.css" />
+  </head>
+  <body class="bg-orange-900" >
+    <div class="flex flex-col h-screen">
+      <div
+        class="container-lg mx-auto h-1/7 flex flex-col justify-center items-center"
+      >
+        <h1 class="text-7xl text-amber-600 font-bold font-serif pt-10">BOOKLYN</h1>
+      </div>
+
+      <div class="my-14 flex justify-center items-center">
+        <p class="text-center w-1/2 text-white text-xl">
+          where the worlds of literature and cinema collide <br>
+          Search for your next captivating book or movie adventure
+        </p>
+      </div>
+
+      <form class="flex justify-center w-100 p-10">
+        <label for="simple-search" class="sr-only">Search</label>
+        <div class="relative flex justify-center">
+          <div
+            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+          ></div>
+          <input type="text" id="simple-search"
+            class="bg-white border text-black text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full pl-10 p-2.5 dark:border-gray-300 dark:placeholder-white dark:text-white dark:focus:ring-blue-500 dark:focus:border-orange-500"
+            placeholder="Search Term"
+            required/>
+        </div>
+        <button
+          type="submit"
+          class="flex p-2.5 ml-2 text-sm font-medium text-white bg-orange-00 rounded-lg border border-white hover:bg-amber-600 focus:ring-4 focus:outline-none focus:ring-orange-300  dark:hover:bg-amber-600 dark:focus:ring-amber-600"
+          id="searchBtn"
+        >
+          <svg
+            class="w-4 h-4"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 20 20"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+            />
+          </svg>
+          <span class="sr-only">Search</span>
+        </button>
+      </form>
+
+      
+      <div class="flex flex-col justify-center">
+        <button id="clear-search-history" class="rounded-lg p-2.5 ml-2 text-white border border-white hover:bg-amber-600 w-50 ml-auto mr-auto" onclick="clearSearchHistory()">Clear search history</button>
+        <div class="flex flex-row justify-around items-center w-100 h-auto mt-10 text-white" id="previousSearches"></div>
+      </div>
+
+      <div id="sections" class="flex justify-around"></div>
+
+      <div id="searchResults" class="flex justify-center gap-16">
+        <div id="bookResults" class="grid grid-cols-2 gap-4">
+        </div>
+        <div id="movieResults" class="grid grid-cols-2 gap-4">
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center items-center hidden" id="preview-section">
+    
+        <h2  class="text-3xl text-orange-300 font-serif font-bold pt-10 tracking-wide">Preview Selection</h2>
+        <div id="preview-content" class="text-white font-bolder text-xl"></div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets\js\script.js"></script>
+  </body>
+</html>
