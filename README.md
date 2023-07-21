@@ -5,7 +5,7 @@
 Welcome to Booklyn, where the worlds of literature and cinema collide!
 We believe that books and movies have the power to transport us, educate us, and ignite our imagination.
 That's why we've created Booklyn, your go-to platform for discovering new books and movies.
-Get ready to unlock a world of literary and cinematic trasures like never before.
+Get ready to unlock a world of literary and cinematic treasures like never before.
 
 ## Features
 
@@ -18,7 +18,7 @@ Get ready to unlock a world of literary and cinematic trasures like never before
 
 To use Booklyn, follow these steps:
 
-1. Visit the Booklyn website at https://dreamsalotl.github.io/booklyn/.
+1. Visit the Booklyn website at https://mizzymizu.github.io/booklyn/.
 
 2. On the homepage, you will find a search bar. Enter a word related to the book or movie you are interested in.
 
@@ -42,10 +42,14 @@ Dora Angelica Cruz Perez,
 Dan Obello.
 As part of UTSA coding bootcamp.
 
+To view the initial repo for commit history, check out this repo: https://dreamsalotl.github.io/booklyn/
+
 ## Screenshot
 
 <img width="1392" alt="Screen Shot 2023-07-20 at 1 26 37 PM" src="https://github.com/dreamsalotl/booklyn/assets/33271291/4766fd2c-8a80-4e5e-96d5-b0f66bef2bf3">
 
-## Link to deployed application
+## Project links
 
-https://dreamsalotl.github.io/booklyn/
+GitHub Pages: https://mizzymizu.github.io/booklyn/
+
+GitHub Repository: https://github.com/Mizzymizu/booklyn
